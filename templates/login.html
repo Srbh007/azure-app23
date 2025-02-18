@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to EGPT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Login to EGPT</h2>
+    <form method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Login</button>
+
+        <a href="{{ url_for('register') }}">New to EGPT? Create an Account</a>
+    </form>
+</div>
+
+<footer style="background: linear-gradient(to right, #1e3c72, #2a5298); color: white; padding: 40px 0; width: 100%; font-family: Arial, sans-serif;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        <!-- Logo Section -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px;">
+            <!-- Company Info -->
+            <div style="flex: 1; min-width: 250px; margin-bottom: 30px;">
+                <div style="margin-bottom: 20px;">
+                    <h3 style="margin: 0; font-size: 24px; font-weight: 600;">Electro Global</h3>
+                    <p style="margin: 5px 0; color: #e0e0e0;">Innovate With Us</p>
+                </div>
+                <div style="color: #e0e0e0; line-height: 1.6;">
+                    <p style="margin: 5px 0;">Bhamashah Technohub, Jaipur<br>Rajasthan</p>
+                    <p style="margin: 5px 0;">(+91)-723-101-2223<br>(+91)-921-671-6124</p>
+                    <p style="margin: 5px 0;">contact@electroglobal.in</p>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div style="flex: 1; min-width: 250px; margin-bottom: 30px;">
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <a href="#" style="color: white; text-decoration: none; transition: color 0.3s ease;">Delivery and Returns</a>
+                    <a href="#" style="color: white; text-decoration: none; transition: color 0.3s ease;">Privacy Policy</a>
+                    <a href="#" style="color: white; text-decoration: none; transition: color 0.3s ease;">Terms & Conditions</a>
+                    <a href="#" style="color: white; text-decoration: none; transition: color 0.3s ease;">About Us</a>
+                    <a href="#" style="color: white; text-decoration: none; transition: color 0.3s ease;">Shipping Policy</a>
+                </div>
+            </div>
+
+            <!-- Shop Links -->
+            <div style="flex: 1; min-width: 250px; margin-bottom: 30px;">
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <a href="#" style="color: white; text-decoration: none; transition: color 0.3s ease;">New Arrivals</a>
+                    <a href="#" style="color: white; text-decoration: none; transition: color 0.3s ease;">Daily Deals</a>
+                    <a href="#" style="color: white; text-decoration: none; transition: color 0.3s ease;">Bulk Order</a>
+                    <a href="#" style="color: white; text-decoration: none; transition: color 0.3s ease;">Shop</a>
+                    <a href="#" style="color: white; text-decoration: none; transition: color 0.3s ease;">Contact Us</a>
+                </div>
+            </div>
+
+            <!-- Account Links -->
+            <div style="flex: 1; min-width: 250px; margin-bottom: 30px;">
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <a href="#" style="color: white; text-decoration: none; transition: color 0.3s ease;">My Account</a>
+                    <a href="#" style="color: white; text-decoration: none; transition: color 0.3s ease;">Blog/Guide</a>
+                    <a href="#" style="color: white; text-decoration: none; transition: color 0.3s ease;">Categories</a>
+                    <a href="#" style="color: white; text-decoration: none; transition: color 0.3s ease;">Electro Kits</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- App Downloads -->
+        <div style="text-align: center; margin: 30px 0; padding: 20px 0; border-top: 1px solid rgba(255,255,255,0.1);">
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <a href="#" style="display: inline-block;"><img src="/api/placeholder/150/50" alt="Google Play" style="height: 40px;"></a>
+                <a href="#" style="display: inline-block;"><img src="/api/placeholder/150/50" alt="App Store" style="height: 40px;"></a>
+            </div>
+        </div>
+
+        <!-- Social Icons -->
+        <div style="text-align: center; margin: 20px 0;">
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <a href="#" style="color: white; font-size: 24px;"><i class="fab fa-facebook"></i></a>
+                <a href="#" style="color: white; font-size: 24px;"><i class="fab fa-twitter"></i></a>
+                <a href="#" style="color: white; font-size: 24px;"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="color: white; font-size: 24px;"><i class="fab fa-linkedin"></i></a>
+                <a href="#" style="color: white; font-size: 24px;"><i class="fab fa-youtube"></i></a>
+                <a href="#" style="color: white; font-size: 24px;"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+            <p style="margin: 0; color: #e0e0e0;">&copy; 2024 Electroglobal Solutions Pvt Ltd. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

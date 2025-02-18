@@ -1,0 +1,88 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}ELECTROGLOBAL - EGPT Chatbot{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <div class="wrapper"> <!-- Start of Wrapper -->
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="container">
+                <a href="https://electroglobal.in" class="navbar-brand" target="_blank">ELECTROGLOBAL</a>
+                <ul class="navbar-menu">
+                    <li><a href="{{ url_for('login') }}">Login</a></li>
+                    <li><a href="{{ url_for('register') }}">Register</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            {% block content %}{% endblock %}
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Electro Global Logo">
+                    <h3>Electro Global</h3>
+                    <p>Innovate With Us</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <p>Bhamashah Technohub, Jaipur<br>Rajasthan</p>
+                        <p>(+91)-723-101-2223<br>(+91)-921-671-6124</p>
+                        <p>contact@electroglobal.in</p>
+                    </div>
+                    <div class="footer-section">
+                        <a href="#">Delivery and Returns</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Shipping Policy</a>
+                    </div>
+                    <div class="footer-section">
+                        <a href="#">New Arrivals</a>
+                        <a href="#">Daily Deals</a>
+                        <a href="#">Bulk Order</a>
+                        <a href="#">Shop</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                    <div class="footer-section">
+                        <a href="#">My Account</a>
+                        <a href="#">Blog/Guide</a>
+                        <a href="#">Categories</a>
+                        <a href="#">Electro Kits</a>
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#"><img src="{{ url_for('static', filename='images/google-play.png') }}" alt="Google Play"></a>
+                    <a href="#"><img src="{{ url_for('static', filename='images/app-store.png') }}" alt="App Store"></a>
+                </div>
+
+                <div class="footer-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Electroglobal Solutions Pvt Ltd. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div> <!-- End of Wrapper -->
+
+</body>
+</html>
